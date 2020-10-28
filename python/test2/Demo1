@@ -1,0 +1,64 @@
+# num1 = input("输入第一个数字")
+# num2 = input("输入第二个数字")
+#
+# sum = float(num1)+float(num2)
+#
+# print('数字 {0} 和数字 {1} 相加的结果： {2}'.format(num1, num2, sum))
+# print('两数之和为： %.1f' %(float(input('输入第一个数：'))+athfloat(input('输入第二个数：'))))
+#
+# num  = float(input('请输入第一个数字：'))
+# num_sqrt = num ** 0.3333
+# print(' %0.3f 的平方根为 %0.3f'%(num,num_sqrt))
+
+# 二次方程式 ax**2 + bx + c = 0
+# a、b、c 用户提供，为实数，a ≠ 0
+# import cmath
+#
+# a = float(input('输入a'))
+# b = float(input('输入b'))
+# c = float(input('输入c'))
+# # 计算
+# d = (b ** 2) - (4 * a * c)
+#
+# # 两种求解方式
+# sol1 = (-b - cmath.sqrt(d)) / (2 * a)
+# sol2 = (-b + cmath.sqrt(d)) / (2 * a)
+#
+# print('结果为 {0} 和 {1}'.format(sol1, sol2))
+
+
+# def bin_search(data_list, val):
+#     low = 0                         # 最小数下标
+#     high = len(data_list) - 1       # 最大数下标
+#     while low <= high:
+#         mid = (low + high) // 2     # 中间数下标
+#         if data_list[mid] == val:   # 如果中间数下标等于val, 返回
+#             return mid
+#         elif data_list[mid] > val:  # 如果val在中间数左边, 移动high下标
+#             high = mid - 1
+#         else:                       # 如果val在中间数右边, 移动low下标
+#             low = mid + 1
+#     return # val不存在, 返回None
+# ret = bin_search(list(range(1, 10)), 3)
+# print(ret)
+
+import time
+import datetime
+# # 先获取时间数组格式的日期
+# threeDayAgo = (datetime.datetime.now() - datetime.timedelta(days = 3))
+# print(threeDayAgo)
+# # 转换为时间戳
+# timeStamp = int(time.mktime(threeDayAgo.timetuple()))
+# print(timeStamp)
+# # 转化为其他字符串格式
+# otherStyleTime = threeDayAgo.strftime("%Y-%m-%d %H:%M:%S")
+# print(otherStyleTime)
+
+# a1 = "2020-02-22 16:50:48"
+# # 先转换为时间数组
+# timeArray = time.strptime(a1, "%Y-%m-%d %H:%M:%S")
+#
+# # 转化为时间戳
+# timeStamp = int(time.mktime(timeArray))
+# print(timeStamp)
+
